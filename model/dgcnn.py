@@ -60,7 +60,7 @@ def get_graph_feature(x: torch.Tensor, k: int = 20, idx: int = None):
     return feature
 
 
-class DGCNN_Classification(nn.module):
+class DGCNN_Classification(nn.Module):
     def __init__(self, args: argparse.Namespace, output_channels: int = 40):
         super().__init__()
         self.args = args
